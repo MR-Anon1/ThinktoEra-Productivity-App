@@ -63,7 +63,7 @@ Developed by **Poorab Khawale**.
 
 - GitHub: [MR-Anon1](https://github.com/MR-Anon1)
 - Instagram: [poorab_khawale](https://instagram.com/poorab_khawale)
-- Privacy Policy: [index.html](index.html)
+- Privacy Policy: [https://mr-anon1.github.io/ThinktoEra-Productivity-App/](privacy-policy.html)
 
 ## License
 
