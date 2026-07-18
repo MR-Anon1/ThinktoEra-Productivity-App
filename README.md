@@ -63,7 +63,7 @@ Developed by **Poorab Khawale**.
 
 - GitHub: [MR-Anon1](https://github.com/MR-Anon1)
 - Instagram: [poorab_khawale](https://instagram.com/poorab_khawale)
-- Privacy Policy: [privacy-policy.html](privacy-policy.html)
+- Privacy Policy: [index.html](index.html)
 
 ## License
 
