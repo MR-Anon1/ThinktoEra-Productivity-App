@@ -1,0 +1,339 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#5b2bab">
+  <meta name="description" content="Privacy Policy for ThinktoEra Productivity, developed by Poorab Khawale.">
+  <title>Privacy Policy | ThinktoEra Productivity</title>
+  <style>
+    :root {
+      --bg: #f7f4ff;
+      --surface: rgba(255, 255, 255, 0.92);
+      --surface-soft: #f3edff;
+      --text: #241735;
+      --muted: #675b73;
+      --primary: #5b2bab;
+      --primary-strong: #461a91;
+      --tertiary: #b21d72;
+      --border: #e1d8ee;
+      --shadow: 0 24px 70px rgba(55, 30, 86, 0.12);
+      --radius: 24px;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #171221;
+        --surface: rgba(34, 27, 47, 0.94);
+        --surface-soft: #2a2138;
+        --text: #f8f4ff;
+        --muted: #c6bad3;
+        --primary: #c5a6ff;
+        --primary-strong: #d9c5ff;
+        --tertiary: #ff9acb;
+        --border: #40354f;
+        --shadow: 0 24px 70px rgba(0, 0, 0, 0.28);
+      }
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      color: var(--text);
+      background:
+        radial-gradient(circle at 8% 4%, rgba(91, 43, 171, 0.16), transparent 28rem),
+        radial-gradient(circle at 92% 18%, rgba(178, 29, 114, 0.10), transparent 25rem),
+        var(--bg);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a { color: var(--primary); text-underline-offset: 3px; }
+    a:hover { color: var(--primary-strong); }
+    a:focus-visible { outline: 3px solid var(--primary); outline-offset: 4px; border-radius: 4px; }
+
+    .page { width: min(100% - 32px, 1120px); margin: 0 auto; padding: 40px 0 72px; }
+    .hero {
+      position: relative;
+      overflow: hidden;
+      padding: clamp(28px, 6vw, 64px);
+      color: #fff;
+      background: linear-gradient(135deg, #5b2bab, #b21d72);
+      border-radius: 32px;
+      box-shadow: var(--shadow);
+    }
+    .hero::after {
+      content: "";
+      position: absolute;
+      width: 320px;
+      height: 320px;
+      right: -130px;
+      top: -170px;
+      border: 1px solid rgba(255, 255, 255, 0.22);
+      border-radius: 50%;
+      box-shadow: 0 0 0 44px rgba(255,255,255,.04), 0 0 0 88px rgba(255,255,255,.03);
+    }
+    .eyebrow { margin: 0 0 10px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; opacity: .82; }
+    h1 { position: relative; margin: 0; font-size: clamp(2.25rem, 6vw, 4.5rem); line-height: 1.05; letter-spacing: -.045em; }
+    .hero p { position: relative; max-width: 720px; margin: 20px 0 0; font-size: 1.08rem; color: rgba(255,255,255,.88); }
+    .meta { position: relative; display: flex; flex-wrap: wrap; gap: 10px 24px; margin-top: 24px; font-size: .95rem; }
+
+    .layout { display: grid; grid-template-columns: 250px minmax(0, 1fr); gap: 24px; margin-top: 24px; align-items: start; }
+    .toc, article {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(14px);
+    }
+    .toc { position: sticky; top: 18px; padding: 22px; }
+    .toc strong { display: block; margin-bottom: 10px; font-size: .82rem; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
+    .toc a { display: block; padding: 5px 0; color: var(--muted); text-decoration: none; font-size: .92rem; }
+    .toc a:hover { color: var(--primary); }
+    article { padding: clamp(24px, 5vw, 56px); }
+    section + section { margin-top: 44px; padding-top: 36px; border-top: 1px solid var(--border); }
+    h2 { margin: 0 0 14px; font-size: clamp(1.4rem, 3vw, 1.9rem); line-height: 1.25; letter-spacing: -.025em; }
+    h3 { margin: 24px 0 8px; font-size: 1.08rem; }
+    p { margin: 10px 0; }
+    ul { margin: 12px 0; padding-left: 1.3rem; }
+    li + li { margin-top: 7px; }
+    .summary {
+      margin-bottom: 40px;
+      padding: 22px;
+      border: 1px solid color-mix(in srgb, var(--primary) 26%, var(--border));
+      border-radius: 18px;
+      background: var(--surface-soft);
+    }
+    .summary strong { color: var(--primary-strong); }
+    .data-table { width: 100%; border-collapse: collapse; margin: 18px 0; font-size: .96rem; }
+    .data-table th, .data-table td { padding: 14px; text-align: left; vertical-align: top; border-bottom: 1px solid var(--border); }
+    .data-table th { color: var(--muted); font-size: .78rem; letter-spacing: .08em; text-transform: uppercase; }
+    .callout { margin-top: 18px; padding: 16px 18px; border-left: 4px solid var(--primary); border-radius: 10px; background: var(--surface-soft); }
+    footer { padding: 28px 12px 0; text-align: center; color: var(--muted); font-size: .9rem; }
+
+    @media (max-width: 820px) {
+      .page { width: min(100% - 20px, 720px); padding-top: 10px; }
+      .hero { border-radius: 24px; }
+      .layout { grid-template-columns: 1fr; }
+      .toc { position: static; }
+      .toc nav { columns: 2; column-gap: 20px; }
+    }
+    @media (max-width: 560px) {
+      .toc nav { columns: 1; }
+      .data-table, .data-table tbody, .data-table tr, .data-table th, .data-table td { display: block; }
+      .data-table thead { display: none; }
+      .data-table tr { padding: 12px 0; border-bottom: 1px solid var(--border); }
+      .data-table td { padding: 5px 0; border: 0; }
+      .data-table td::before { content: attr(data-label); display: block; color: var(--muted); font-size: .76rem; font-weight: 800; letter-spacing: .07em; text-transform: uppercase; }
+    }
+    @media print {
+      body { background: #fff; color: #111; }
+      .page { width: 100%; padding: 0; }
+      .hero { color: #111; background: none; box-shadow: none; border: 1px solid #bbb; }
+      .toc { display: none; }
+      .layout { display: block; }
+      article { border: 0; box-shadow: none; padding: 24px 0; }
+      a { color: #111; }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header class="hero">
+      <p class="eyebrow">ThinktoEra Productivity</p>
+      <h1>Privacy Policy</h1>
+      <p>This policy explains what information ThinktoEra Productivity handles, why it is used, where it is stored, and the choices available to you.</p>
+      <div class="meta">
+        <span><strong>Effective:</strong> July 18, 2026</span>
+        <span><strong>Last updated:</strong> July 18, 2026</span>
+        <span><strong>Developer:</strong> Poorab Khawale</span>
+      </div>
+    </header>
+
+    <div class="layout">
+      <aside class="toc" aria-label="Table of contents">
+        <strong>On this page</strong>
+        <nav>
+          <a href="#scope">1. Scope</a>
+          <a href="#information">2. Information collected</a>
+          <a href="#use">3. How information is used</a>
+          <a href="#authentication">4. Authentication and Google Sign-In</a>
+          <a href="#firestore">5. Firestore and synchronization</a>
+          <a href="#local">6. Local storage and notifications</a>
+          <a href="#diagnostics">7. Optional Sentry diagnostics</a>
+          <a href="#not-collected">8. Information not collected</a>
+          <a href="#sharing">9. Sharing and third parties</a>
+          <a href="#security">10. Security</a>
+          <a href="#retention">11. Data retention and deletion</a>
+          <a href="#rights">12. Your rights and choices</a>
+          <a href="#international">13. International processing</a>
+          <a href="#children">14. Children's privacy</a>
+          <a href="#changes">15. Changes</a>
+          <a href="#contact">16. Contact</a>
+        </nav>
+      </aside>
+
+      <article>
+        <div class="summary">
+          <strong>Privacy at a glance.</strong> ThinktoEra uses Firebase Authentication and Cloud Firestore to provide accounts and cloud synchronization. It does not use Firebase Analytics or Firebase Crashlytics, does not collect location data, contains no advertising SDKs, and currently offers no purchases or subscriptions. Some focus-session and notification information remains on your device.
+        </div>
+
+        <section id="scope">
+          <h2>1. Scope and responsibility</h2>
+          <p>This Privacy Policy applies to ThinktoEra Productivity (the “App”), developed and operated by Poorab Khawale (“ThinktoEra,” “we,” “us,” or “our”). It applies to the current Windows application and, when released, related Android, iOS, and web versions that link to this policy.</p>
+          <p>For purposes of applicable data-protection law, Poorab Khawale is responsible for the personal information processed through the App, except where a third-party provider acts independently under its own terms and privacy policy.</p>
+        </section>
+
+        <section id="information">
+          <h2>2. Information we collect or process</h2>
+          <table class="data-table">
+            <thead><tr><th>Category</th><th>Examples</th><th>Where handled</th></tr></thead>
+            <tbody>
+              <tr><td data-label="Category">Account and identity information</td><td data-label="Examples">Firebase user ID, email address, display name, profile photo URL, authentication provider, and sign-in status made available through Google Sign-In and Firebase Authentication.</td><td data-label="Where handled">Firebase Authentication and your device.</td></tr>
+              <tr><td data-label="Category">Productivity content</td><td data-label="Examples">Tasks, projects, daily planner entries, planner templates, weekly reviews, and user settings that you create or save.</td><td data-label="Where handled">Cloud Firestore and local Firestore cache.</td></tr>
+              <tr><td data-label="Category">Local app data</td><td data-label="Examples">Focus-session state, focus preferences, notification schedules, read status, identifiers, and other preferences needed to operate local features.</td><td data-label="Where handled">On your device; some settings may also be stored in Firestore where indicated by the App.</td></tr>
+              <tr><td data-label="Category">Optional diagnostic information</td><td data-label="Examples">Error type, stack trace, app operation, app version, operating-system or device information, and related technical context if Sentry is enabled in a distributed build.</td><td data-label="Where handled">Sentry, only when configured by the developer.</td></tr>
+              <tr><td data-label="Category">Website hosting data</td><td data-label="Examples">Standard request information such as IP address, browser type, requested page, and timestamps that a hosting provider may process when you visit this policy.</td><td data-label="Where handled">GitHub Pages or a future website hosting provider.</td></tr>
+            </tbody>
+          </table>
+          <p>We collect information you provide directly, information supplied by the authentication provider you choose, and limited technical information required to operate, secure, and troubleshoot the App.</p>
+        </section>
+
+        <section id="use">
+          <h2>3. How we use information</h2>
+          <p>We use information only as reasonably necessary to:</p>
+          <ul>
+            <li>create, authenticate, maintain, and secure your account;</li>
+            <li>save, retrieve, organize, and synchronize your productivity content;</li>
+            <li>provide planner, task, project, review, focus, settings, export, and account-deletion features;</li>
+            <li>schedule and display reminders you request;</li>
+            <li>maintain app reliability, diagnose failures, prevent abuse, and protect users and services;</li>
+            <li>respond to support, privacy, and legal requests; and</li>
+            <li>comply with applicable law and enforce applicable terms.</li>
+          </ul>
+          <p>Depending on your location, processing may be based on performing the service you request, your consent, compliance with legal obligations, or legitimate interests such as security and reliability where those interests are not overridden by your rights.</p>
+          <p>We do not sell personal information and do not use your productivity content for targeted advertising.</p>
+        </section>
+
+        <section id="authentication">
+          <h2>4. Google Sign-In and Firebase Authentication</h2>
+          <p>The App uses Google Sign-In as an authentication option and Firebase Authentication to establish and maintain your account session. When you use Google Sign-In, Google may provide Firebase and the App with basic account information such as your unique account identifier, email address, display name, and profile photo URL. ThinktoEra does not receive your Google password.</p>
+          <p>Your interaction with Google is also governed by the <a href="https://policies.google.com/privacy" rel="noopener noreferrer">Google Privacy Policy</a>. Firebase Authentication maintains the account information needed to identify you and associate your cloud data with your account.</p>
+        </section>
+
+        <section id="firestore">
+          <h2>5. Cloud Firestore and cross-device synchronization</h2>
+          <p>For authenticated users, Cloud Firestore stores tasks, projects, daily planner data, planner templates, weekly reviews, and user settings beneath an account-specific user identifier. Firestore-backed information can synchronize between devices when you sign in with the same account.</p>
+          <p>Firestore may maintain an offline cache on your device to support responsive access and synchronization. Changes made while connectivity is unavailable may be transmitted when connectivity returns.</p>
+          <p>Access is restricted using Firebase Authentication and Firestore Security Rules designed so authenticated users can access only data associated with their own user ID. Google describes Firebase privacy and security practices, including encryption in transit and encryption at rest for Cloud Firestore and Firebase Authentication, in its <a href="https://firebase.google.com/support/privacy/" rel="noopener noreferrer">Firebase Privacy and Security documentation</a>.</p>
+        </section>
+
+        <section id="local">
+          <h2>6. Local storage and notifications</h2>
+          <h3>Local storage</h3>
+          <p>Focus sessions and certain notification or preference information are stored locally on your device and may not synchronize between devices. Local information can remain on a device after you sign out. You can generally remove it by using available in-app controls, clearing the App's local data through your operating system, or uninstalling the App.</p>
+          <h3>Local notifications</h3>
+          <p>The App uses local notifications for reminders. Notification schedules and related settings are processed on your device. The App may request operating-system notification permission. You may disable notifications through the App's settings, where available, or through your device's system settings.</p>
+          <p>Notification text may be visible on your lock screen depending on your operating-system preferences. Review your device notification-preview settings if other people can access your device.</p>
+        </section>
+
+        <section id="diagnostics">
+          <h2>7. Optional Sentry error reporting</h2>
+          <p>Firebase Crashlytics is not used. A distributed build may optionally enable Sentry only when the developer configures a Sentry DSN. When enabled, Sentry may receive technical diagnostics such as an error message, stack trace, affected operation, app version, platform information, and associated timestamps. The App configures Sentry not to send default personally identifiable information and does not enable performance tracing; however, technical reports can sometimes contain information present in an error context.</p>
+          <p>Diagnostic information is used to identify and correct crashes, errors, security problems, and reliability issues. Sentry processes information under its own <a href="https://sentry.io/privacy/" rel="noopener noreferrer">Privacy Policy</a>. If Sentry is not configured in a build, the App does not transmit reports to Sentry.</p>
+        </section>
+
+        <section id="not-collected">
+          <h2>8. Information and services not used</h2>
+          <p>In the current version:</p>
+          <ul>
+            <li>Firebase Analytics is not used;</li>
+            <li>Firebase Crashlytics is not used;</li>
+            <li>precise or approximate device location is not collected;</li>
+            <li>contacts, microphone recordings, camera content, and browsing history are not collected by ThinktoEra;</li>
+            <li>there are no advertisements or third-party advertising SDKs, including AdMob; and</li>
+            <li>there are no in-app purchases, paid subscriptions, or payment processing features.</li>
+          </ul>
+          <p>If these practices change in a future version, this policy will be updated and any legally required notice or consent will be provided.</p>
+        </section>
+
+        <section id="sharing">
+          <h2>9. Disclosure and third-party services</h2>
+          <p>We disclose information only as necessary to operate the App, comply with law, protect rights and safety, or complete a business transition subject to appropriate safeguards. We do not sell or rent your personal information.</p>
+          <ul>
+            <li><strong>Google Firebase:</strong> provides Firebase Authentication, Cloud Firestore, and related infrastructure.</li>
+            <li><strong>Google Sign-In:</strong> provides federated account authentication when you select that method.</li>
+            <li><strong>Sentry:</strong> may process technical error reports only in builds where Sentry is enabled.</li>
+            <li><strong>Microsoft:</strong> may independently process account, download, licensing, and device information when you obtain or update the App through Microsoft Store, under Microsoft's own privacy terms.</li>
+            <li><strong>GitHub Pages or future hosting providers:</strong> may process standard server or request logs when hosting this policy or a ThinktoEra website.</li>
+            <li><strong>Authorities or legal recipients:</strong> information may be disclosed where reasonably believed necessary to comply with law, legal process, or enforceable governmental requests, or to protect users, the public, or legal rights.</li>
+          </ul>
+          <p>Third-party services operate under their own terms and privacy policies. We encourage you to review them.</p>
+        </section>
+
+        <section id="security">
+          <h2>10. Security</h2>
+          <p>ThinktoEra uses reasonable technical and organizational safeguards appropriate to the nature of the information, including Firebase Authentication, account-scoped Firestore Security Rules, HTTPS communication, and platform security controls. Firebase reports that Cloud Firestore and Firebase Authentication encrypt data in transit and at rest.</p>
+          <p>No method of storage or transmission is completely secure. You are responsible for protecting access to your Google account, device, and operating-system profile. Notify us if you believe your ThinktoEra account or information has been compromised.</p>
+        </section>
+
+        <section id="retention">
+          <h2>11. Data retention and deletion</h2>
+          <p>Cloud account and productivity information is generally retained while your account remains active or as needed to provide the App. It may also be retained where reasonably necessary to comply with legal obligations, resolve disputes, prevent abuse, enforce agreements, or maintain security.</p>
+          <p>The App provides account controls that allow you to export your Firestore-backed user data and delete your account. Account deletion is designed to delete the associated Firestore collections and Firebase Authentication account. Copies may remain temporarily in provider backups, security records, or logs until overwritten or deleted under the applicable provider's retention cycle.</p>
+          <p>Local focus or preference data may remain on a particular device unless removed through in-app controls, operating-system data controls, or uninstalling the App. Optional Sentry reports, if enabled, are retained according to the configured Sentry project settings and legal or security requirements.</p>
+        </section>
+
+        <section id="rights">
+          <h2>12. Your rights and choices</h2>
+          <p>Depending on where you live, you may have rights to request access, correction, export, deletion, restriction, or objection concerning your personal information, and to withdraw consent where processing relies on consent. You may also have the right to complain to your local data-protection authority.</p>
+          <ul>
+            <li><strong>Access and export:</strong> use the data-export option in the Account area or contact us.</li>
+            <li><strong>Correction:</strong> update available profile information and edit your productivity content in the App.</li>
+            <li><strong>Deletion:</strong> use the account-deletion option or contact us for assistance.</li>
+            <li><strong>Notifications:</strong> change reminder settings in the App or operating system.</li>
+            <li><strong>Google account access:</strong> manage connected-app access through your Google Account settings.</li>
+            <li><strong>Local information:</strong> clear application data or uninstall the App.</li>
+          </ul>
+          <p>We may need to verify your identity before completing a privacy request. We will respond within the period required by applicable law. These rights may be subject to lawful exceptions.</p>
+        </section>
+
+        <section id="international">
+          <h2>13. International data processing</h2>
+          <p>ThinktoEra and its service providers may process information in countries other than the country where you live. Those countries may have different data-protection laws. Where required, service providers use recognized safeguards for international transfers. Consult the linked provider privacy materials for additional information about their locations and transfer mechanisms.</p>
+        </section>
+
+        <section id="children">
+          <h2>14. Children's privacy</h2>
+          <p>ThinktoEra is a general productivity application and is not directed to children under 13, or under the minimum age required to consent to online services in their country. We do not knowingly collect personal information from children in violation of applicable law. If you believe a child has provided personal information without appropriate authorization, contact us so we can investigate and take appropriate action.</p>
+        </section>
+
+        <section id="changes">
+          <h2>15. Changes to this policy</h2>
+          <p>We may update this Privacy Policy to reflect new features, service providers, legal requirements, or changes in our practices. The “Last updated” date will identify the latest revision. If a change materially affects how personal information is handled, we will provide additional notice in the App or through another appropriate channel where required.</p>
+        </section>
+
+        <section id="contact">
+          <h2>16. Contact information</h2>
+          <p>For privacy questions, requests, or concerns, contact:</p>
+          <div class="callout">
+            <strong>Poorab Khawale</strong><br>
+            Developer, ThinktoEra Productivity<br>
+            Email: <a href="mailto:khawalepoorab@gmail.com">khawalepoorab@gmail.com</a><br>
+            Project: <a href="https://github.com/MR-Anon1/thinktoera" rel="noopener noreferrer">github.com/MR-Anon1/thinktoera</a>
+          </div>
+          <p>Please include “ThinktoEra Privacy Request” in the subject line and avoid sending passwords or unnecessary sensitive information.</p>
+        </section>
+      </article>
+    </div>
+
+    <footer>
+      &copy; 2026 Poorab Khawale. ThinktoEra Productivity.
+    </footer>
+  </main>
+</body>
+</html>
