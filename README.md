@@ -47,8 +47,6 @@ The current release targets Windows. The Flutter codebase is structured to suppo
 - [Cloud Firestore](https://firebase.google.com/docs/firestore) for synchronized data
 - `flutter_local_notifications` for reminders
 - Optional [Sentry](https://sentry.io/) error reporting
-- See the complete [Privacy Policy](privacy-policy.html).
-
 ## Security and privacy
 
 - Firebase Authentication identifies signed-in users.
