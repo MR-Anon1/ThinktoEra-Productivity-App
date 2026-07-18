@@ -65,35 +65,6 @@ Focus sessions and some notification state are stored locally and may not synchr
 
 See the complete [Privacy Policy](privacy-policy.html).
 
-## Project structure
-
-```text
-lib/
-├── app/
-│   ├── router/          # GoRouter configuration
-│   └── theme/           # Color, theme, and gradient definitions
-├── core/
-│   ├── connectivity/    # Connectivity and synchronization status
-│   ├── layout/          # Responsive application shell
-│   ├── services/        # Notifications and shared services
-│   └── widgets/         # Reusable UI, motion, and startup widgets
-├── features/
-│   ├── auth/
-│   ├── calendar/
-│   ├── dashboard/
-│   ├── feedback/
-│   ├── focus/
-│   ├── notifications/
-│   ├── planner/
-│   ├── projects/
-│   ├── tasks/
-│   └── weekly_review/
-├── firebase_options.dart
-└── main.dart
-```
-
-Feature modules generally follow presentation, application, domain, and data layers where the feature requires them.
-
 ## Requirements
 
 - Flutter SDK compatible with the version declared in `pubspec.yaml`
